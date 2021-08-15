@@ -1,8 +1,7 @@
-from blog.views import about_html
-from about.models import about
+from .views import about1
 from django.urls import path
 
 
 urlpatterns = [
-    path('', about_html),
+    path('', about1),
 ]

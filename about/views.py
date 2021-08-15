@@ -4,6 +4,6 @@ from django.shortcuts import render
 
 from .models import about
 
-def about(request , about):
-    all_abuot = about.objects.all()
-    return render(request,'about/about_html')
+def about1(request):
+    all_about = about.objects.all()
+    return render(request,'about/about.html',{'about':all_about})
