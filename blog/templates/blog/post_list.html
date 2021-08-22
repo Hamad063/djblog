@@ -1,13 +1,11 @@
-2> Welcome In Our blog </h2>
+<h2> Welcome </h2>
 
 <a href="{% url 'blog:new_post' %}">Add New Post</a>
 <hr>
 
-
-
 {% for post in posts %}
 
-<h2><a href="{% url 'blog:post_detail' post.id %}">{{post}}</a> </h2>
+    <h2><a href="{% url 'blog:post_detail' post.id %}">{{post}}</a></h2>
 
 
 {% endfor %}
